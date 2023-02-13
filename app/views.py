@@ -15,5 +15,5 @@ class HomeView(viewsets.ModelViewSet):
 
     def list(self, request, *args, **kwargs):
         fake_list = [{"success":True,"message":"Api working fine!"}]
-        #return JsonResponse(fake_list,status=200,safe=False)
-        return super().list(request,*args,**kwargs)
+        return JsonResponse(fake_list,status=200,safe=False)
+        #return super().list(request,*args,**kwargs)
